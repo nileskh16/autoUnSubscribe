@@ -1,6 +1,6 @@
 {
   "name": "automatic-unsubscribe",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The module is developed to export decorator for the purpose of unsubscrbing from events and observables to avoid memory leaks in angular application",
   "main": "dist/index.js",
   "scripts": {
