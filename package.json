@@ -4,7 +4,9 @@
   "description": "The module is developed to export decorator for the purpose of unsubscrbing from events and observables to avoid memory leaks in angular application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "build": "rm -rf ./dist && tsc",
+    "prepublish": "rm -rf ./dist && npm test && npm run build"
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,11 @@
   "bugs": {
     "url": "https://github.com/nileskh16/autoUnSubscribe/issues"
   },
-  "homepage": "https://github.com/nileskh16/autoUnSubscribe#readme"
+  "homepage": "https://github.com/nileskh16/autoUnSubscribe#readme",
+  "devDependencies": {
+    "@types/jest": "^21.1.4",
+    "jest": "^21.2.1",
+    "ts-jest": "^21.1.3",
+    "typescript": "^2.5.3"
+  }
 }
